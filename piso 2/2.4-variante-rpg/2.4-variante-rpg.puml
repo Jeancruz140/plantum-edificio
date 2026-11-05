@@ -1,0 +1,21 @@
+
+@startuml
+package personajes {
+  class Guerrero
+  class Mago
+  class Arquero
+}
+
+package inventario {
+  class Inventario
+  class Item
+}
+
+package combate {
+  class ArenaCombate
+}
+
+combate ..> personajes
+combate ..> inventario
+inventario ..> personajes
+@enduml
