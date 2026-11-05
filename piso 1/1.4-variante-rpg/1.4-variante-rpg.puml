@@ -1,0 +1,11 @@
+
+@startuml
+|Jugador|
+start
+:Seleccionar clase de personaje;
+|Sistema|
+:Crear personaje;
+|Jugador|
+:Consultar personaje creado;
+stop
+@enduml
