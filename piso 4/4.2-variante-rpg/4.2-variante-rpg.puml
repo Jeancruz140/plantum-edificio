@@ -1,0 +1,17 @@
+
+@startuml
+node "PC del Jugador" {
+  artifact "RPG Manager" as APP
+}
+
+node "Servidor del Juego" {
+  artifact "Gestor de Partidas" as GP
+}
+
+node "Servidor de Datos" {
+  database "BD Personajes" as DB
+}
+
+APP --> GP : Solicitar guardado
+GP --> DB : Guardar personajes
+@enduml
