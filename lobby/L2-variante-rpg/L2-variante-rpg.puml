@@ -1,0 +1,9 @@
+
+@startuml
+title RPG Manager - Guardar partida
+
+Jugador -> Sistema : guardarPartida()
+Sistema -> Almacenamiento : guardarEstado()
+Almacenamiento --> Sistema : guardado exitoso
+
+@enduml
