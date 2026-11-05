@@ -1,0 +1,11 @@
+
+@startuml
+left to right direction
+actor GameMaster
+rectangle "RPG Manager" {
+  usecase "Crear mision" as UC3
+  usecase "Moderar jugadores" as UC4
+}
+GameMaster --> UC3
+GameMaster --> UC4
+@enduml
