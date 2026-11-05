@@ -1,0 +1,15 @@
+
+@startuml
+
+' El arquero es un tipo de personaje (guerrero)
+' Guerrero es la clase padre
+class Guerrero
+class Arquero
+
+Guerrero <|-- Arquero
+
+note top of Guerrero
+  La clase padre de todos los personajes es Guerrero
+end note
+
+@enduml
