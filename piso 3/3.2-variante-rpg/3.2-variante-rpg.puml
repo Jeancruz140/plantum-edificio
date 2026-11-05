@@ -1,0 +1,14 @@
+
+@startuml
+loop mientras ambos personajes sigan vivos
+  Arena -> Guerrero : atacar()
+
+  alt flechas > 0
+    Arena -> Arquero : dispararFlecha()
+    Arquero --> Arena : daño = 25
+  else sin flechas
+    Arena -> Arquero : ataqueBasico()
+    Arquero --> Arena : daño = 10
+  end
+end
+@enduml
