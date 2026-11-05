@@ -1,0 +1,7 @@
+
+@startuml
+
+Jugador -> Personaje : atacar()
+Personaje -> Enemigo : recibirDaño()
+
+@enduml

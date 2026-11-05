@@ -1,0 +1,6 @@
+
+@startuml
+
+Jugador -> Personaje : atacar()
+
+@enduml
