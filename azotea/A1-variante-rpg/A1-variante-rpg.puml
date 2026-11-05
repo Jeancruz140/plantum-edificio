@@ -1,0 +1,24 @@
+
+@startuml
+actor Jugador
+participant Arena
+participant Arquero
+participant Guerrero
+
+Jugador -> Arena : iniciarCombate(arquero, guerrero)
+
+loop mientras ambos sigan vivos
+    alt flechas > 0
+        Arena -> Arquero : disparar(guerrero)
+        Arquero --> Arena : dano = 25
+    else sin flechas
+        Arena -> Arquero : ataqueBasico(guerrero)
+        Arquero --> Arena : dano = 10
+    end
+
+    Arena -> Guerrero : atacar(arquero)
+    Guerrero --> Arena : dano = 20
+end
+
+Arena --> Jugador : mostrarGanador()
+@enduml
