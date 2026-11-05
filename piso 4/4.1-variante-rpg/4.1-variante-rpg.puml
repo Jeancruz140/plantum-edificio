@@ -1,0 +1,11 @@
+
+@startuml
+component "Menu del Juego" as M
+component "Gestor de Personajes" as GP
+component "Gestor de Inventario" as GI
+interface "Gestion de Personajes" as IP
+
+M --> IP
+IP - GP
+GP --> GI
+@enduml
