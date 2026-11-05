@@ -1,0 +1,7 @@
+
+@startuml
+actor Jugador
+participant Sistema
+Jugador -> Sistema : guardarPartida()
+Sistema --> Jugador : "Partida guardada"
+@enduml
