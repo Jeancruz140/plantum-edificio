@@ -1,0 +1,8 @@
+
+
+@startuml
+class Mago {
+  - nombre : String
+  + lanzarHechizo(objetivo : Personaje)
+}
+@enduml
