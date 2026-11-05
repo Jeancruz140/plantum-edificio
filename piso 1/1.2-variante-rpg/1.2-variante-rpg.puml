@@ -1,0 +1,8 @@
+
+@startuml
+usecase "Guardar partida" as UC1
+usecase "Guardar estado" as G
+usecase "Mostrar confirmación" as M
+UC1 .> G : <<include>>
+M .> UC1 : <<extend>>
+@enduml
