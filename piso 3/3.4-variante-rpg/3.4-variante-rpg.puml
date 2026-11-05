@@ -1,0 +1,13 @@
+
+@startuml
+[*] --> Explorando
+
+state "Gestionando inventario" as GI {
+  [*] --> SeleccionandoObjeto
+  SeleccionandoObjeto --> UsandoObjeto : usarItem
+  UsandoObjeto --> SeleccionandoObjeto : elegirOtro
+}
+
+Explorando --> GI : abrirInventario
+GI --> Explorando : cerrarInventario
+@enduml
