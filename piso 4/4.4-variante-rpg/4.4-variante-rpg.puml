@@ -1,0 +1,16 @@
+
+@startuml
+!include <C4/C4_Container>
+
+Person(jugador, "Jugador")
+
+System_Boundary(rpg, "RPG Manager") {
+  Container(web, "Interfaz del juego", "Flask")
+  Container(api, "Logica del juego", "Python")
+  ContainerDb(db, "Datos del juego", "MariaDB")
+}
+
+Rel(jugador, web, "Utiliza")
+Rel(web, api, "Solicita acciones")
+Rel(api, db, "Guarda personajes y partidas")
+@enduml
