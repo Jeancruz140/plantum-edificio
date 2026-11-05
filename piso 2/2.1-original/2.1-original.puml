@@ -1,0 +1,9 @@
+
+@startuml
+class Personaje {
+  - nombre : String
+  - vida : int
+  + atacar(objetivo : Personaje)
+  + estaVivo() : boolean
+}
+@enduml
