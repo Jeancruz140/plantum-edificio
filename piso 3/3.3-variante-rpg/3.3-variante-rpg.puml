@@ -1,0 +1,8 @@
+
+@startuml
+[*] --> Iniciada
+Iniciada --> EnCombate : iniciarCombate
+EnCombate --> Iniciada : ganarCombate
+EnCombate --> Derrota : perderCombate
+Derrota --> [*]
+@enduml
