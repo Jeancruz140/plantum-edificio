@@ -1,0 +1,11 @@
+
+@startuml
+start
+:Seleccionar cargar partida;
+if (¿Existen partidas?) then (sí)
+  :Cargar partida previa;
+else (no)
+  :Mostrar "No existen partidas";
+endif
+stop
+@enduml
