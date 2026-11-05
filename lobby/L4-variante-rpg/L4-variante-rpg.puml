@@ -1,0 +1,10 @@
+
+@startuml
+!theme aws-orange
+skinparam DefaultFontName "Courier New"
+class Guerrero {
+  - fuerza : int
+  - vida : int
+  + atacar()
+}
+@enduml
