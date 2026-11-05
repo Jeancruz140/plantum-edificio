@@ -1,0 +1,16 @@
+
+@startuml
+object "gandalf : Mago" as g {
+  nombre = "Mago"
+  vida = 150
+}
+
+object "varita : Item" as v {
+  nombre = "Varita magica"
+  dano = 50
+}
+
+object "pocion : Item" as p
+g --> v
+g --> p
+@enduml
